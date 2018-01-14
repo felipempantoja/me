@@ -10,7 +10,7 @@ class App extends Component {
         <header>
           <nav>
             <div className="row">
-              <img className="avatar" src="/img/avatar.png" alt="Avatar" />
+              <img className="avatar" src={`${process.env.PUBLIC_URL}/img/avatar.png`} alt="Avatar" />
               <ul className="main-nav">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
