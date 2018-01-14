@@ -1,9 +1,10 @@
 {
   "name": "felipempantoja.github.io",
-  "homepage": "http://felipempantoja.github.io/portifolio",
+  "homepage": "http://felipempantoja.github.io/me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "normalize.css": "^7.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
