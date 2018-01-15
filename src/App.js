@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TypedJSWrapper from './TypedJSWrapper'
 import logo from './logo.svg';
 import 'normalize.css';
 import './App.css';
@@ -10,7 +11,7 @@ class App extends Component {
         <header>
           <nav>
             <div className="row">
-              <img className="avatar" src={`${process.env.PUBLIC_URL}/img/avatar.png`} alt="Avatar" />
+              <img className="avatar" src="/me/img/avatar.png" alt="Avatar" />
               <ul className="main-nav">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
@@ -22,13 +23,12 @@ class App extends Component {
           </nav>
           <div className="hero-text-box">
             <h1>
-              Hi, I'm Felipe<br />
-              I'm a software developer based in Rio de Janeiro, Brazil<br />
-              Contact me. Any time.<br/>
-              THis portifolio is under construction. Thanks. 
+              <TypedJSWrapper strings={[`Hi^300, I'm Felipe.^500 <br />I'm a software developer based in Rio de Janeiro, Brazil.^500 <br />Contact me.^200 Any time.`]} />
             </h1>
-            <a className="btn btn-full" href="#">Contact</a>
-            <a className="btn btn-ghost" href="#">More about me</a>
+            <div className="btn-group fadeIn">
+              <a className="btn btn-full" href="#">Contact</a>
+              <a className="btn btn-ghost" href="#">More about me</a>
+            </div>
           </div>
         </header>
       </div>
